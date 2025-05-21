@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-import koreanize_matplotlib
 import matplotlib.pyplot as plt
+import folium
 
 # 페이지 설정
 st.set_page_config(
@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 # 한글 폰트 설정
-plt.rcParams['font.family'] = 'NanumGothic'
+plt.rcParams['font.family'] = 'Malgun Gothic'
 plt.rcParams['axes.unicode_minus'] = False
 
 # 제목
