@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import koreanize_matplotlib
+import matplotlib.pyplot as plt
 
 # 페이지 설정
 st.set_page_config(
@@ -9,6 +11,10 @@ st.set_page_config(
     page_icon="📊",
     layout="wide"
 )
+
+# 한글 폰트 설정
+plt.rcParams['font.family'] = 'NanumGothic'
+plt.rcParams['axes.unicode_minus'] = False
 
 # 제목
 st.title("2025년 4월 인구 현황 분석")
